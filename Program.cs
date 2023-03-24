@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using Donaldo_SportsStore.Models;
+using Rubio_SportsStore.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,11 +17,23 @@ builder.Services.AddScoped<IStoreRepository, EFStoreRepository>();
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession();
 
 var app = builder.Build();
 
 //
 app.UseStaticFiles();
+app.UseSession();
+//
+app.MapControllerRoute("catpage", "{category}/Page{productPage:int}",
+		new { Controller = "Home", action = "Index" });
+app.MapControllerRoute("page", "Page{productPage:int}", 
+	new {Controller = "Home",action = "Index",productPage = 1});
+app.MapControllerRoute("category", "{category}",
+	new { Controller = "Home", action = "Index", productPage = 1 });
+app.MapControllerRoute("pagination","Products/Page{productPage}",
+	new {Controller = "Home", action = "Index"});
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -42,6 +54,7 @@ app.MapRazorPages();
 
 //
 app.MapDefaultControllerRoute();
+app.MapRazorPages();
 
 //
 SeedData.EnsurePopulated(app);

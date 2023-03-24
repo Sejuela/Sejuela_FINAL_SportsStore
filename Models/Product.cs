@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Donaldo_SportsStore.Models
+namespace Rubio_SportsStore.Models
 {
 	public class Product
 	{

@@ -1,7 +1,7 @@
 ﻿using System.Xml.Linq;
 using Microsoft.EntityFrameworkCore;
 
-namespace Donaldo_SportsStore.Models
+namespace Rubio_SportsStore.Models
 {
 	public static class SeedData
 	{
@@ -49,6 +49,13 @@ namespace Donaldo_SportsStore.Models
 				new Product
 				{
 					Name = "Bling-Bling King",
+					Description = "Gold-plated",
+					Category = "Chess",
+					Price = 1325
+				},
+				new Product
+				{
+					Name = "Bling-Bling Queen",
 					Description = "Gold-plated",
 					Category = "Chess",
 					Price = 1225

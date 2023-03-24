@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.DataProtection.XmlEncryption;
 
-namespace Donaldo_SportsStore.Models
+namespace Rubio_SportsStore.Models
 {
 	public class EFStoreRepository : IStoreRepository
 	{
