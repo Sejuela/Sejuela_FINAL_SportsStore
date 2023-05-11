@@ -1,0 +1,89 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Academic\\INTPROG\\pro-asp.net-core-3-master\\11 - SportsStore - Security & Deployment\\End of Chapter\\SportsSln\\SportsStore.Tests\\SportsStore.Tests.csproj": {}
+  },
+  "projects": {
+    "D:\\Academic\\INTPROG\\pro-asp.net-core-3-master\\11 - SportsStore - Security & Deployment\\End of Chapter\\SportsSln\\SportsStore.Tests\\SportsStore.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Academic\\INTPROG\\pro-asp.net-core-3-master\\11 - SportsStore - Security & Deployment\\End of Chapter\\SportsSln\\SportsStore.Tests\\SportsStore.Tests.csproj",
+        "projectName": "SportsStore.Tests",
+        "projectPath": "D:\\Academic\\INTPROG\\pro-asp.net-core-3-master\\11 - SportsStore - Security & Deployment\\End of Chapter\\SportsSln\\SportsStore.Tests\\SportsStore.Tests.csproj",
+        "packagesPath": "C:\\Users\\Dwight\\.nuget\\packages\\",
+        "outputPath": "D:\\Academic\\INTPROG\\pro-asp.net-core-3-master\\11 - SportsStore - Security & Deployment\\End of Chapter\\SportsSln\\SportsStore.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Dwight\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\Academic\\INTPROG\\pro-asp.net-core-3-master\\11 - SportsStore - Security & Deployment\\End of Chapter\\SportsSln\\Eyac_SportsStore\\Eyac_SportsStore.csproj": {
+                "projectPath": "D:\\Academic\\INTPROG\\pro-asp.net-core-3-master\\11 - SportsStore - Security & Deployment\\End of Chapter\\SportsSln\\Eyac_SportsStore\\Eyac_SportsStore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.2.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.13.1, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
